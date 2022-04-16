@@ -1,0 +1,56 @@
+{
+    "name": "Example Bot",
+    "description": "Written In Python Using python",
+    "logo": "https://telegra.ph/file/d8ff390e2a0ddfb5e4370.jpg",
+    "keywords": [
+        "python",
+        "Telegram"
+    ],
+    "website": "https://t.me/",
+    "repository": "",
+    "success_url": "https://t.me/",
+    "env": {
+        "BOT_TOKEN": {
+            "description": "Your Bot Token from @BotFather",
+            "value": ""
+        },
+        "API_HASH": {
+            "description": "Your API HASH from my.telegram.org",
+            "value": ""
+        },
+        "APP_ID": {
+            "description": "Your APP ID from my.telegram.org",
+            "value": ""
+        },
+        "MAIN_GROUP_ID": {
+            "description": "MAIN GROUP ID",
+            "value": ""
+        },
+        "MONGO_DB_URL": {
+            "description": "MONGO DB URL",
+            "value": ""
+        },
+        "BOT_ID": {
+            "description": "BOT ID",
+            "value": ""
+        },
+        "MAIN_BOT_TOKEN": {
+            "description": "MAIN BOT TOKEN",
+            "value": ""
+        }
+
+    },
+    "addons": [],
+    "buildpacks": [
+        {
+            "url": "heroku/python"
+        }
+    ],
+    "formation": {
+        "worker": {
+            "quantity": 1,
+            "size": "free"
+        }
+    },
+    "stack": "heroku-20"
+}
